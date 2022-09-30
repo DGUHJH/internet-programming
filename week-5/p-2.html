@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h2>자기소개 페이지 (with. 시멘틱 태그)</h2>
+    <div>
+      안녕하세요. 컴퓨터공학전공 2020112034 황재형입니다. <br>
+      자기 소개 페이지를 통해 제 자신을 소개합니다.
+    </div>
+    <br>
+    <img width="100" src="./assets/profile.jpg" alt="황재형">
+    <br>
+    <div>황재형</div>
+  </header>
+  <nav>
+    <h2>목차</h2>
+    <ul>
+      <li><a href="#intro"> 전공소개 </a></li>
+      <li><a href="#tech"> 보유기술 </a></li>
+      <li> <a href="#price"> 수상이력</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h2>내용</h2>
+    <details>
+      <summary id="intro">
+        전공소개
+      </summary>
+      <p>
+        제 전공은 컴퓨터공학과입니다.
+      </p>
+    </details>
+  </article>
+  <article>
+    <details>
+      <summary id="tech">
+        보유기술
+      </summary>
+      <p>
+      <div>인터넷 프로그래밍 : <meter value="0.9" max="1.0"></meter></div>
+      <div>javascript : <meter value="1.0" max="1.0"></meter></div>
+      <div>c언어 : <meter value="0.9" max="1.0"></meter></div>
+      <div>목표 기술 성취도 : <progress value="0.9" max="1.0"></progress></div>
+      </p>
+    </details>
+  </article>
+  <article>
+    <details>
+      <summary id="price">
+        수상이력
+      </summary>
+      <p>
+        1) 제 4회 D-Tech 기술 / 디자인 공모전 <br>
+        수상명 : 특별상(국회의원상, 한국사회복지협의회장상)<br>
+        수상일 : 2021-11-08<br>
+        프로젝트 내용 : 청각장애인 전용 악기 교육 어플리케이션, 음악하자 기획 및 프로토타입 구현<br>
+        2) 2021 제 8회 전국 ict융합 공모전<br>
+        수상명 : 장려상(충북ICT산업협회장상)<br>
+        수상일 : 2021-09-29<br>
+        프로젝트 내용 : 사회적 취약계층을 위한 그림 피드백 단위의 단기 거래 플랫폼, 드로잉 서포터즈 기획 및 프로토타입 구현<br>
+        3) 2020년도 겨울 동국 캡스톤디자인 밸류업 프로그램<br>
+        수상명 : 굿아이디어상(동국대학교 사회맞춤형 산학협력 선도대학 (LINC+) 육성 사업단)<br>
+        수상일 : 2021-02-23<br>
+        프로젝트 내용 : 피아노 연주 중, 악보를 자동으로 넘겨주는 스마트 악보 기획 고도화 및 웹 어플리케이션 구현<br>
+        4) 동국대학교 창의아이디어 경진대회<br>
+        수상명 : 은상(동국대학교 융합교육원장)<br>
+        수상일 : 2020-12-18<br>
+        프로젝트 내용 : 피아노 연주 중, 악보를 자동으로 넘겨주는 스마트 악보의 프로토타입 구현
+      </p>
+    </details>
+  </article>
+  <article>
+    <details>
+      <summary id="price">
+        오늘의 시간표
+      </summary>
+      <p>
+        기상 <time>09:00</time>
+        암호학과네트워크보안 <time>09:30</time>
+        인터넷프로그래밍 <time>14:00</time>
+      </p>
+    </details>
+  </article>
+  <aside>
+    <h4>노트</h4>
+    <div>인터넷 프로그래밍 강의를 수강하여 최종적으로 "그림 피드백 단위의 단기 그림 과외 플랫폼"을 만들고 싶습니다.</div>
+  </aside>
+  <br>
+  <footer>
+    &copy; 2022년09월30일 ,[2020112034 황재형]
+  </footer>
+</body>
+
+</html>

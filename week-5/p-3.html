@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>강의 사이트 회원가입</h2>
+  <hr>
+  <div>
+    ID : <input placeholder="ID를 입력하세요.">
+  </div>
+  <div>
+    PW : <input placeholder="PW를 입력하세요.">
+  </div>
+  <div>
+    profile : <textarea cols="20" rows="3">prfile 내용 기입</textarea>
+  </div>
+  <div>
+    성별 : <input list="gender">
+    <datalist id="gender">
+      <option value="1">남성</option>
+      <option value="2">여성성</option>
+    </datalist>
+  </div>
+  <hr>
+  <h3>
+    관심분야
+  </h3>
+  <div>
+    CSE <input type="checkbox">
+    ENG <input type="checkbox">
+    Research <input type="checkbox">
+  </div>
+  <hr>
+  <h3>
+    지원 강의
+  </h3>
+  <div>
+    <input type="radio">
+    React
+    <img height="100" src="./assets/react.png">
+  </div>
+  <div>
+    <input type="radio">
+    JSP
+    <img height="100" src="./assets/jsp.png">
+  </div>
+  <div>
+    <input type="radio">
+    Spring
+    <img height="100" src="./assets/spring.png">
+  </div>
+  <hr>
+  <div>
+    <input type="submit" value="제출하기">
+    <input type="reset" value="초기화하기">
+  </div>
+</body>
+
+</html>
