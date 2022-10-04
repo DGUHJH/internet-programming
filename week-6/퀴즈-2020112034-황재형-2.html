@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>카드 정보 입력</legend>
+      <ol>
+        <li>카드 회사 <select>
+            <option>Woori BC</option>
+            <option selected>Samsung</option>
+            <option>Shinhan</option>
+            <option>KB Card</option>
+          </select>
+        <li>카드 타입 <input type="radio" name="card" id="card1" value="1"> <label for="card1">VISA</label> <input
+            type="radio" name="card" id="card2" value="2"> <label for="card2">MasterCard</label>
+        <li>카드 번호 <input type="number"> - <input type="number"> - <input type="number"> - <input type="number">
+        <li>CRC 번호 <input type="number">
+        <li>카드 소유자 이름 <input type="text" placeholder="카드 상의 이름">
+        <li>카드 유효기간 <input type="month">
+      </ol>
+    </fieldset>
+  </form>
+  <br>
+  <input type="submit" value="제출">
+</body>
+
+</html>
