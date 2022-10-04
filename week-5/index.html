@@ -1,0 +1,485 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>2020112034황재형</title>
+  <style>
+    body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 !important;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 150%;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 40px;
+      line-height: 150%;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 150%;
+      margin: 0;
+    }
+
+    button {
+      border: 0;
+    }
+
+    /* divider_horizontal */
+
+    .d-h {
+      width: 100%;
+      height: 1px;
+      background: #eee;
+      padding: 0;
+      border-width: 0px;
+      margin: 0;
+    }
+
+    .f-s-xl {
+      font-size: 28px;
+      line-height: 180%;
+    }
+
+    .f-s-l {
+      font-size: 24px;
+      line-height: 180%;
+    }
+
+    .f-s-m {
+      font-size: 20px;
+      line-height: 180%;
+    }
+
+    .f-s-s {
+      font-size: 16px;
+      line-height: 180%;
+    }
+
+    .f-w-b {
+      font-weight: bold;
+    }
+
+    .f-w-m {
+      font-weight: bold;
+    }
+
+    .f-w-r {
+      font-weight: bold;
+    }
+
+    .m-t-10 {
+      margin-top: 10px;
+    }
+
+    .m-t-20 {
+      margin-top: 20px;
+    }
+
+    .m-t-40 {
+      margin-top: 40px;
+    }
+
+    .m-t-60 {
+      margin-top: 40px;
+    }
+
+    .m-t-100 {
+      margin-top: 100px;
+    }
+
+    .m-t-200 {
+      margin-top: 200px;
+    }
+
+    .m-b-10 {
+      margin-bottom: 10px;
+    }
+
+    .m-b-20 {
+      margin-bottom: 20px;
+    }
+
+    .m-b-40 {
+      margin-bottom: 40px;
+    }
+
+    .m-l-20 {
+      margin-left: 20px;
+    }
+
+    .m-l-40 {
+      margin-left: 40px;
+    }
+
+    .f-c-g {
+      color: #7e7e7e;
+    }
+
+    .f-c-w {
+      color: #fff;
+    }
+
+    .f-c-b {
+      color: #248bd7;
+    }
+
+    .d-f-r {
+      display: flex;
+    }
+
+    .d-f-c {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .j-s-b {
+      justify-content: space-between;
+    }
+
+    .c-p {
+      cursor: pointer;
+    }
+
+    .header-container-root {
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-container {
+      width: 1280px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .header-logo-img {
+      width: 260px;
+      height: 65px;
+      margin-right: 20px;
+    }
+
+    .blue-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #248cd7;
+      padding: 7px 16px;
+      border-radius: 8px;
+      margin-right: 5px;
+    }
+
+    .normal-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 16px;
+      border-radius: 8px;
+    }
+
+    .banner-container {
+      width: 1280px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 160px;
+      padding-bottom: 80px;
+    }
+
+    .banner-img-container {
+      width: 1280px;
+      height: 480px;
+      position: relative;
+    }
+
+    .banner-img {
+      width: 1280px;
+      height: 480px;
+      background: linear-gradient(360deg,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.28) 100%);
+      border-radius: 28px;
+    }
+
+    .banner-img-typo {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+    }
+
+    .partner-root {
+      width: 100%;
+      height: 815px;
+      background: #fcfcfc;
+      display: flex;
+      justify-content: center;
+    }
+
+    .partner-container {
+      width: 1280px;
+      height: 815px;
+      background: #fcfcfc;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 60px;
+    }
+
+    .partner-people-list-container {
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .partner-people-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .partner-people-img {
+      width: 180px;
+      height: 180px;
+      background: linear-gradient(360deg,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.28) 100%);
+      border-radius: 8px;
+    }
+
+    .partner-recommend-list-container {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .partner-recommend-container {
+      width: 600px;
+      background: #f6f6f6;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    .request-container {
+      width: 1280px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+    }
+
+    .request-small-editor {
+      width: 628px;
+      font-size: 24px;
+      height: 80px;
+      padding: 24px 30px;
+      box-sizing: border-box;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+    }
+
+    .request-large-editor {
+      width: 1280px;
+      height: 80px;
+      font-size: 24px;
+      padding: 24px 30px;
+      box-sizing: border-box;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+    }
+
+    .request-xlarge-editor {
+      width: 1280px;
+      height: 400px;
+      font-size: 24px;
+      padding: 24px 30px;
+      box-sizing: border-box;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+    }
+
+    .request-submit-button-container {
+      width: 1280px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #248bd7;
+      border-radius: 8px;
+    }
+
+    .footer-container {
+      width: 1280px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 72px;
+      padding-bottom: 60px;
+    }
+
+    .footer-logo-img {
+      width: 260px;
+      height: 65px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-container-root">
+    <div class="header-container">
+      <div class="header-logo-container">
+        <img class="header-logo-img m-r-20" src="assets/logo.png" />
+        <span class="f-s-m f-s-r">
+          피드백 요청
+        </span>
+        <span class="f-s-m f-s-r">
+          피드백 리스트
+        </span>
+      </div>
+      <div class="d-f-r">
+        <button class="blue-button f-s-r f-c-w c-p">
+          로그인
+        </button>
+        <button class="normal-button f-s-r f-c-g c-p">
+          회원가입
+        </button>
+      </div>
+    </div>
+  </div>
+  <hr class="d-h">
+  <div class="banner-container">
+    <h2>안녕하세요 실시간 비대면 그림 코칭 시스템 <br />
+      <span class="f-c-b">드로잉서포터즈</span>입니다.
+    </h2>
+    <div class="banner-img-container m-t-40">
+      <div class="banner-img"></div>
+      <h1 class="banner-img-typo f-c-w">
+        비대면으로 진행하는 <br />
+        나의 작품 피드백 : 드로잉서포터즈
+      </h1>
+    </div>
+  </div>
+  <hr class="d-h">
+  <div class="partner-root">
+    <div class="partner-container">
+      <div class="d-f-c">
+        <h3>
+          드로잉 서포터즈와 함께합니다
+        </h3>
+        <div class="partner-people-list-container">
+          <div class="partner-people-container m-t-40">
+            <div class="partner-people-img"></div>
+            <span class="f-s-m f-w-b m-t-10">
+              김민수
+            </span>
+            <span class="f-s-s f-c-g">
+              서양화전공 7년
+            </span>
+          </div>
+          <div class="partner-people-container m-t-40">
+            <div class="partner-people-img"></div>
+            <span class="f-s-m f-w-b m-t-10">
+              김민수
+            </span>
+            <span class="f-s-s f-c-g">
+              서양화전공 7년
+            </span>
+          </div>
+          <div class="partner-people-container m-t-40">
+            <div class="partner-people-img"></div>
+            <span class="f-s-m f-w-b m-t-10">
+              김민수
+            </span>
+            <span class="f-s-s f-c-g">
+              서양화전공 7년
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="d-f-c">
+        <h3>
+          드로잉 서포터즈를 추천합니다
+        </h3>
+        <div class="partner-recommend-list-container m-t-40">
+          <div class="partner-recommend-container f-s-m m-b-20">
+            안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈
+            입니다.
+          </div>
+          <div class="partner-recommend-container f-s-m m-b-20">
+            안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈
+            입니다.
+          </div>
+          <div class="partner-recommend-container f-s-m">
+            안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈 입니다. 안녕하세요 창작자를 위한 드로잉 서포터즈
+            입니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="d-h">
+  <div class="request-container">
+    <h3>
+      피드백 요청
+    </h3>
+    <input class="request-large-editor m-t-60" placeholder="그림 제목">
+    <div class="d-f-r m-t-20 j-s-b">
+      <select class="request-small-editor" placeholder="피드백 분야">
+        <option disabled selected value> 피드백 분야 </option>
+        <option value="1">동양화</option>
+        <option value="2">서양화</option>
+        <option value="3">현대미술</option>
+        <option value="4">일러스트</option>
+      </select>
+      <input list="feedback-type" class="request-small-editor">
+      <datalist id="feedback-type" class="request-small-editor" placeholder="피드백 유형">
+        <option disabled selected value>피드백 유형</option>
+        <option value="스케치">
+        <option value="드로잉">
+        <option value="채색">
+      </datalist>
+    </div>
+    <div class="d-f-r m-t-20 j-s-b">
+      <input class="request-small-editor" placeholder="희망 가격대">
+      <input class="request-small-editor" placeholder="희망 마감 기한">
+    </div>
+    <textarea class="request-xlarge-editor m-t-20" placeholder="피드백 상세 요구사항 (최대 200자)"></textarea>
+    <button class="request-submit-button-container f-s-xl f-c-w m-t-100">
+      제출하기
+    </button>
+  </div>
+  <hr class="d-h m-t-200">
+  <div class="footer-container">
+    <div class="d-f-c">
+      <span class="f-s-m f-w-b">
+        이용약관 ㅣ 개인정보처리방침
+      </span>
+      <span class="f-s-m m-t-40">
+        상호명: 드로잉서포터즈 · 대표: 황재형 · 사업자등록번호: 000-00-00000 <br /> 이메일 : ghkdwogud852@gmail.com 연락처 : 010-3120-4914
+      </span>
+    </div>
+    <img class="footer-logo-img" src="assets/logo.png" />
+  </div>
+</body>
+
+</html>
