@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>반티 제작하기</h2>
+  <hr>
+  <label for="email">이메일</label> <input id="email" type="email"><br>
+  <label for="number">제작개수<small>(최소 20명)</small></label> <input id="number" type="number" min="20" max="50" step="1">
+  <hr>
+  <label for="color">선호 색상</label> <input id="color" type="color" value=“#ffffff><br>
+  <label for="date">희망 배송일자</label> <input id="date" type="date"><br>
+  <label for="size">옷 사이즈<small>(XS, S, M, L, XL)</small></label> <input type="range" list="size_list" min="85"
+    max="105"> <datalist id="size_list">
+    <option>85</option>
+    <option>90</option>
+    <option>95</option>
+    <option>100</option>
+    <option>105</option>
+  </datalist>
+</body>
+
+</html>

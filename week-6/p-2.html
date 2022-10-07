@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>과일배송 주문서</h2>
+  <hr>
+  <form>
+    <fieldset>
+      <legend>개인정보</legend>
+      <ul>
+        <li><label for="name"> 이름</label> <input id="name" placeholder="여백 없이 입력"></li>
+        <li><label for="phone_number"> 연락처</label> <input id="phone_number" placeholder="연락가능한 번호"></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송지 정보</legend>
+      <ul>
+        <li><label for="address"> 주소</label> <input id="address" type="text"></li>
+        <li><label for="address"> 전화번호</label> <input id="address" type="tel"></li>
+        <li><label for="address"> 요청사항</label> <textarea id="address" rows="3" cols="40"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>주문 정보</legend>
+      <ul>
+        <li> <input id="apple" type="checkbox"> <label for="apple"> 사과</label> <input id="apple" type="number" value="0"
+            min="0" max="8">개</li>
+        <li> <input id="pine_apple" type="checkbox"> <label for="pine_apple"> 파인애플</label> <input id="pine_apple"
+            type="number" value="0" min="0" max="10">개</li>
+        <li> <input id="strawberry" type="checkbox"> <label for="strawberry"> 딸기</label> <input id="strawberry"
+            type="number" value="0" min="0" max="20">개</li>
+      </ul>
+    </fieldset>
+    <button type="submit">주문하기</button>
+    <button type="reset">다시 작성</button>
+  </form>
+</body>
+
+</html>
