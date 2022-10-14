@@ -1,0 +1,38 @@
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  border-bottom: 1px black solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  border: 1px dashed black;
+}
+
+h2 {
+  color: blue;
+  text-shadow: 2px 4px 4px;
+}
+
+p {
+  font-family: 휴먼 편지체;
+  font-size: 1em;
+  text-indent: 1em;
+}
+
+footer {
+  background: orange;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
