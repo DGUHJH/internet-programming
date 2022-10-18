@@ -8,6 +8,10 @@ strong {
   color: green;
 }
 
+.indent {
+  text-indent: 3em;
+}
+
 #center {
   text-align: end;
 }
