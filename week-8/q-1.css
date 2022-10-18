@@ -1,0 +1,29 @@
+.main {
+  background-color: skyblue;
+}
+
+.headline {
+  font-size: 30px;
+  color: brown;
+  background-color: yellow;
+  text-align: center;
+  padding: 5px 0;
+  border: 3px black double;
+  border-radius: 30px;
+}
+
+div.help {
+  color: blue;
+}
+
+p.help {
+  font-family: 맑은 고딕;
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
+}
+
+#hot {
+  color: brown;
+  background: orange;
+}
