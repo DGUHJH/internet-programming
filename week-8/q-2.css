@@ -1,0 +1,26 @@
+.main {
+  background-color: skyblue;
+}
+
+h3,
+em,
+strong {
+  color: green;
+}
+
+#center {
+  text-align: end;
+}
+
+#center strong {
+  color: blue;
+  background-color: yellow;
+}
+
+p i strong {
+  color: red;
+}
+
+div strong {
+  color: blue;
+}
