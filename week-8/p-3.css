@@ -1,0 +1,28 @@
+.container {
+  width: 520px;
+  background: cadetblue;
+  padding: 20px 40px;
+  border: 10px solid black;
+}
+h1 {
+}
+
+.info_container {
+  list-style: none;
+  background: bisque;
+  line-height: 30px;
+}
+
+.type_container {
+  list-style: none;
+  background: aquamarine;
+  line-height: 30px;
+}
+
+.type_textarea {
+  text-align: left;
+}
+
+.button_container {
+  margin-top: 20px;
+}

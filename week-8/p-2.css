@@ -1,0 +1,48 @@
+.container {
+  width: 750px;
+  height: 350px;
+  padding: 10px;
+  border: 20px dashed #ccc;
+  border-radius: 20px;
+}
+
+.book-img {
+  width: 200px;
+  height: 350px;
+  background-image: url('./assets/book.png');
+  background-repeat: no-repeat;
+  float: left;
+}
+
+h1 {
+  font-size: 17px;
+}
+
+.content {
+  width: 500px;
+  padding-left: 220px;
+}
+
+.book-desc {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 15px 0;
+}
+
+.accent {
+  color: red;
+  font-weight: bold;
+}
+
+.details {
+}
+
+a {
+  text-decoration: none;
+}
+
+.details:hover {
+  color: red;
+  background: yellow;
+  cursor: pointer;
+}
