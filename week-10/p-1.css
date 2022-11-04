@@ -1,0 +1,75 @@
+body {
+  position: relative;
+}
+
+.root {
+  position: relative;
+}
+
+.container {
+  float: left;
+  position: relative;
+  margin-right: 5px;
+}
+
+.season_container {
+  width: 200px;
+  height: 70px;
+  font-size: 36px;
+  padding-top: 30px;
+  text-align: center;
+  border: 3px green solid;
+}
+
+.season_img_container {
+  position: relative;
+}
+
+.season_img {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+}
+
+.season_img_1 {
+  top: 0;
+  left: 0;
+}
+
+.season_img_2 {
+  top: 50px;
+  left: 25px;
+}
+
+.season_img_3 {
+  top: 100px;
+  left: 50px;
+}
+
+.z_index_1 {
+  z-index: 1;
+}
+
+.z_index_2 {
+  z-index: 2;
+}
+
+.z_index_3 {
+  z-index: 3;
+}
+
+.spring_container {
+  background: pink;
+}
+
+.summer_container {
+  background: skyblue;
+}
+
+.fall_container {
+  background: brown;
+}
+
+.winter_container {
+  background: white;
+}

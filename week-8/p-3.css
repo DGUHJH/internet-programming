@@ -24,3 +24,7 @@
 .button_container {
   margin-top: 20px;
 }
+
+input#phone_number {
+  margin-top: 200px;
+}
