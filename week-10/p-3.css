@@ -1,0 +1,56 @@
+.mytable {
+  box-shadow: 0 0 6px yellow;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+thead tr {
+  border-bottom: 3px blue solid;
+}
+
+thead td {
+  color: blue;
+}
+
+tbody tr {
+  border-bottom: 3px #c9c9c9 dashed;
+}
+
+.tbody_header {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.tbody_header:hover {
+  background: skyblue;
+}
+
+.tbody_content {
+  width: 150px;
+  height: 100px;
+  padding: 50px 0;
+}
+
+.of_h {
+  overflow: hidden;
+}
+.of_s {
+  overflow: scroll;
+}
+.of_a {
+  overflow: auto;
+}
+.of_v {
+  overflow: visible;
+}
+
+.b_r {
+  background: red;
+}
+
+.b_o {
+  background: orange;
+}

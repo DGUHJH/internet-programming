@@ -1,0 +1,69 @@
+.rule_container {
+  border: 1px brown solid;
+  margin-top: 10px;
+}
+
+.rule_header_container {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background: orange;
+  margin: 20px 0;
+}
+
+.rule_divider {
+  height: 10px;
+  background: red;
+  border-color: red;
+}
+
+.rule_list_container {
+  width: 100%;
+  background: yellow;
+}
+
+ul {
+  list-style: none;
+}
+
+.rule_list_number {
+  font-size: 24px;
+  color: green;
+  margin-right: 10px;
+}
+
+.user_list_container {
+  margin-top: 20px;
+}
+
+.user_container {
+  background: yellow;
+  border-bottom: 2px white solid;
+}
+
+.user_img {
+  width: 30px;
+  height: 15px;
+  padding-left: 20px;
+}
+
+.input_container {
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  width: 100px;
+  text-align: end;
+}
+
+.input_wrapper {
+  margin-bottom: 15px;
+}
+
+#name:focus {
+  background: green;
+  border: 8px #eee dotted;
+}

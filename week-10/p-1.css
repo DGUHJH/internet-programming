@@ -14,9 +14,9 @@ body {
 
 .season_container {
   width: 200px;
-  height: 70px;
+  height: 110px;
   font-size: 36px;
-  padding-top: 30px;
+  line-height: 110px;
   text-align: center;
   border: 3px green solid;
 }
