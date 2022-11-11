@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    @import url("./p-3.css");
+  </style>
+  <script>
+    const evil = (fn) => {
+      return new Function('return ' + fn)();
+    };
+    let result = evil(prompt('수식 입력 :', ''));
+    let result1 = 212;
+    let result2 = 180
+    let result3 = 10.571;
+    let result4 = 402.571;
+    let result5 = "NAN";
+    let result6 = "NAN";
+    let result7 = false;
+    const onMouseOver = (type) => {
+      if (type === 'red') {
+        document.getElementById("root").style.color = "red";
+        return;
+      }
+      if (type === 'green') {
+        document.getElementById("root").style.color = "green";
+        return
+      }
+      if (type === 'blue') {
+        document.getElementById("root").style.color = "blue";
+        return
+      }
+      if (type === 'default') {
+        document.getElementById("root").style.color = "black";
+        return
+      }
+    }
+  </script>
+</head>
+
+<body id="root">
+  <h2>
+    문자열 리터널을 이용한 색깔 변경
+  </h2>
+  <hr>
+  <p id="red" onmouseover="onMouseOver('red');" onmouseout="onMouseOver('default');">
+    빨간색으로 변경
+  </p>
+  <p id="blue" onmouseover="onMouseOver('blue');" onmouseout="onMouseOver('default');">
+    파란색으로 변경
+  </p>
+  <p id="green" onmouseover="onMouseOver('green');" onmouseout="onMouseOver('default');">
+    초록색으로 변경
+  </p>
+  <hr>
+  <h2>
+    리터널
+  </h2>
+  <p align="center" id="calc_container">
+    <script>document.write(`입력한 수식의 결과 : ${result}`)</script> <br>
+    <script>document.write(`15 + 0xc5 = ${result1} 입니다!<br/>`)</script>
+    <script>document.write(`0xf3 - 0o77 = ${result2} 입니다!<br/>`)</script>
+    <script>document.write(`10571E-3 = ${result3} 입니다!<br/>`)</script>
+    <script>document.write(`위 세개 결과값을 더한 값은 = <underline>"${result4}"</underline> 입니다!<br/>`)</script>
+    <script>document.write(`위 결과값과 NaN을 더한 값은 = <underline>"${result5}"</underline> 입니다!<br/>`)</script>
+    <script>document.write(`NaN에서 NaN을 빼면? : <i>"${result6}"</i> 입니다!<br/>`)</script>
+    <script>document.write(`bool 변수에 담겨 있는 값은 값은 <mark>"${result7}"</mark> 입니다!<br/>`)</script>
+  </p>
+  <h3 align="center">
+    <i>
+      인생은 "한방" 이야
+    </i>
+  </h3>
+</body>
+
+</html>

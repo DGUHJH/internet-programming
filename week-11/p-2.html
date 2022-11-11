@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    @import url("./p-2.css");
+  </style>
+</head>
+
+<body>
+  <img id="char_img" src="./assets/null.png" onmouseover="onMouseOverImg();" onclick="onClickImg();">
+  <div>
+    시작하였습니다!<br>
+    당신의 이름은
+  </div>
+  <h2>
+    <mark id="name_typo">
+    </mark>
+  </h2>
+  <div>
+    로군요!
+  </div>
+</body>
+
+<script>
+  if (confirm("시작할까요?")) {
+    let inputValue = prompt('당신의 이름은 무엇인가요?', '');
+    let nameTypo = document.getElementById('name_typo');
+    nameTypo.textContent = `[${inputValue}]`;
+  }
+  const onMouseOverImg = () => {
+    let charImg = document.getElementById('char_img');
+    charImg.setAttribute('src', './assets/ddung.jpg');
+  }
+  const onClickImg = () => {
+    alert("사랑해요~");
+  }
+</script>
+
+</html>
