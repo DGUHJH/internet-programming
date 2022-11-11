@@ -38,9 +38,9 @@
 }
 
 #spon_img:active {
-  animation: sponAnimation 5s;
+  animation: sponAnimation 2s;
 }
 
 #ddung_img:hover {
-  animation: ddungAnimation 5s;
+  animation: ddungAnimation 2s;
 }

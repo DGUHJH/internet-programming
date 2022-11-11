@@ -10,15 +10,13 @@
 
 <body>
   <img id="char_img" src="./assets/null.png" onmouseover="onMouseOverImg();" onclick="onClickImg();">
-  <div>
+  <div id="info_typo">
     시작하였습니다!<br>
     당신의 이름은
-  </div>
-  <h2>
-    <mark id="name_typo">
-    </mark>
-  </h2>
-  <div>
+    <h2>
+      <mark id="name_typo">
+      </mark>
+    </h2>
     로군요!
   </div>
 </body>
@@ -26,8 +24,19 @@
 <script>
   if (confirm("시작할까요?")) {
     let inputValue = prompt('당신의 이름은 무엇인가요?', '');
-    let nameTypo = document.getElementById('name_typo');
-    nameTypo.textContent = `[${inputValue}]`;
+    if (inputValue !== '' && inputValue !== null) {
+      let nameTypo = document.getElementById('name_typo');
+      nameTypo.textContent = `[${inputValue}]`;
+    } else if (inputValue === '') {
+      let infoTypo = document.getElementById('info_typo');
+      infoTypo.textContent = `시작하였습니다! 아무것도 입력하지 않았습니다.`;
+    } else if (inputValue === null) {
+      let infoTypo = document.getElementById('info_typo');
+      infoTypo.textContent = `시작하였습니다! 취소를 누르셨군요..`;
+    }
+  } else {
+    let infoTypo = document.getElementById('info_typo');
+    infoTypo.textContent = `시작하지 않았습니다!`;
   }
   const onMouseOverImg = () => {
     let charImg = document.getElementById('char_img');
