@@ -22,20 +22,18 @@
 </body>
 
 <script>
+  let infoTypo = document.getElementById('info_typo');
+  let nameTypo = document.getElementById('name_typo');
   if (confirm("시작할까요?")) {
     let inputValue = prompt('당신의 이름은 무엇인가요?', '');
-    if (inputValue !== '' && inputValue !== null) {
-      let nameTypo = document.getElementById('name_typo');
-      nameTypo.textContent = `[${inputValue}]`;
-    } else if (inputValue === '') {
-      let infoTypo = document.getElementById('info_typo');
+    if (inputValue === '') {
       infoTypo.textContent = `시작하였습니다! 아무것도 입력하지 않았습니다.`;
     } else if (inputValue === null) {
-      let infoTypo = document.getElementById('info_typo');
       infoTypo.textContent = `시작하였습니다! 취소를 누르셨군요..`;
+    } else {
+      nameTypo.textContent = `[${inputValue}]`;
     }
   } else {
-    let infoTypo = document.getElementById('info_typo');
     infoTypo.textContent = `시작하지 않았습니다!`;
   }
   const onMouseOverImg = () => {
