@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let a = +prompt("현재는 몇 월입니까?");
+    if (Number.isInteger(a)) {
+      if (a >= 9 && a <= 11) {
+        window.document.write("독서의 계절 가을이네요!! 출력")
+      } else if (a >= 6 && a <= 8) {
+        window.document.write("여름이네요!! 출력")
+      } else if (a >= 3 && a <= 5) {
+        window.document.write("햇살 가득한 봄이네요!! 출력")
+      } else {
+        window.document.write("겨울이네요!! 출력")
+      }
+    } else {
+      widnow.document.write("입력 오류");
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
