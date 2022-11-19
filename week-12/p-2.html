@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let a = +prompt("별 찍기 프로그램 가동! \n별의 높이 입력");
+    let b = +prompt("별 모양 정하기\n1. 기본 2. 역순");
+    if (b === 1) {
+      alert("기본 별찍기를 선택하였습니다.");
+    } else if (b === 2) {
+      alert("역순 별찍기를 선택하였씁니다.");
+    }
+  </script>
+
+</head>
+
+<body>
+  <script>
+    if (b === 1) {
+      document.write("<h3> 기본 별찍기 </h3>");
+    } else if (b === 2) {
+      document.write("<h3> 역순 별찍기 </h3>");
+    }
+    document.write(`<h5> 높이 : ${a}  </h5>`);
+    document.write(`<hr>`);
+    for (let i = 0; i < a; i++) {
+      if (b === 1) {
+        for (let j = 0; j <= i; j++) {
+          document.write("*");
+        }
+      } else if (b === 2) {
+        for (let j = 0; j < a - i; j++) {
+          document.write("*");
+        }
+      }
+      document.write("<br>");
+    }
+  </script>
+</body>
+
+</html>

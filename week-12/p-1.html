@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    while (true) {
+      let a = prompt("첫 번째 수  :");
+      let b = prompt("두 번째 수  :");
+      if (!Number.isInteger(+a) || !Number.isInteger(+b)) {
+        alert("입력 값 중 숫자가 아닌 값이 있습니다.");
+        break;
+      }
+      let c = prompt("연산자  :");
+      switch (c) {
+        case '+':
+          alert(`두 수의 덧셈 : ${eval(a + c + b)}`);
+          break;
+        case '-':
+          alert(`두 수의 뺄셈 : ${eval(a + c + b)}`);
+          break;
+        case '*':
+          alert(`두 수의 곱셈 : ${eval(a + c + b)}`);
+          break;
+        case '/':
+          alert(`두 수의 나눗셈 : ${eval(a + c + b)}`);
+          break;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
