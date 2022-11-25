@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let data = [];
+    for (let i = 0; i < 4; i++) {
+      let a = prompt("앰퍼샌트로 분리하면서 [국가 대표선수 FIFA랭킹] 순으로 입력");
+      let a_country = a.split('&')[0], a_player = a.split('&')[1], a_rank = a.split('&')[2];
+      let b = { country: a_country, player: a_player, rank: a_rank };
+      // 대한민국&손흥민&28
+      // 가나&아이유&60
+      // 포르투갈&호날두&9
+      // 우르과이&가비니&14
+      data = data.concat(b);
+    }
+    data.sort((a, b) => b.rank - a.rank)
+  </script>
+</head>
+
+<body>
+  <h2>2022 카타르 월드컵</h2>
+  <hr>
+  <script>
+    let i;
+    for (i = 0; i < data.length; i++) {
+      window.document.write(`[국가] : ${data[i].country} [대표선수] : ${data[i].player} [FIFA 랭킹] : ${data[i].rank} <br/>`)
+    }  </script>
+  <hr>
+  <script>
+
+    window.document.write(`월드컵 H조에서 가장 강한 나라 : ${data[data.length - 1].country} <br/>`)
+    window.document.write(`월드컵 H조에서 가장 약한 나라 : ${data[0].country} <br/>`)
+  </script>
+</body>
+
+</html>

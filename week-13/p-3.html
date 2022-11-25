@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    function getRandom(min, max) {
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+    function square(width, height, price) {
+      this.width = width;
+      this.height = height;
+      this.price = price;
+      this.area = () => {
+        return this.width * this.height
+      };
+      this.fix = () => {
+        this.width += 5;
+        this.height += 5;
+        this.price -= 8000;
+      }
+    }
+    let a = new square(getRandom(10, 100), getRandom(10, 100), 100000);
+    let b = new square(getRandom(10, 100), getRandom(10, 100), 100000);
+  </script>
+</head>
+
+<body>
+  <h2>
+    square 객체 만들기
+  </h2>
+  <hr>
+  <script>
+    window.document.write(`square1: 가로:${a.width} 세로:${a.height} 자금 :${a.price} <br/>`);
+    window.document.write(`square2: 가로:${b.width} 세로:${b.height} 자금 :${b.price} <br/> <br/>`);
+
+    let c = a.area() > b.area() ? 0 : 1;
+    let count = 0;
+
+    if (!c) {
+      while (b.area() < a.area()) {
+        window.document.write(`square2의 넓이가 square1보다 작아 수리를 진행하였습니다. <br/>`);
+        b.fix();
+        count++;
+      }
+      window.document.write(`<br/> [square2 최종 결과] <br/><br/>`);
+      window.document.write(`수리를 종료합니다. <br/>`);
+      window.document.write(`${count}번 수리를 진행하였습니다. <br/>`);
+      window.document.write(`가로:${b.width}cm 세로:${b.height}cm 자금 :${b.price}원 <br/>`);
+      window.document.write(`넓이 :${b.area()} <br/>`);
+    } else {
+      while (a.area() < b.area()) {
+        window.document.write(`square1의 넓이가 square2보다 작아 수리를 진행하였습니다. <br/>`);
+        a.fix();
+        count++;
+      }
+      window.document.write(`<br/>[square1 최종 결과] <br/><br/>`);
+      window.document.write(`수리를 종료합니다. <br/>`);
+      window.document.write(`${count}번 수리를 진행하였습니다. <br/>`);
+      window.document.write(`가로:${a.width}cm 세로:${a.height}cm 자금 :${a.price}원 <br/>`);
+      window.document.write(`넓이 :${a.area()} <br/>`);
+    }
+  </script>
+</body>
+
+</html>

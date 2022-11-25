@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let today = new Date();
+    let day = today.getDay();
+    let date = today.getDate();
+    let color = 'aqua';
+    if (day === 0 || day === 6) {
+      color = 'gold'
+    }
+    let dayKr = '일'
+    if (day === 1) {
+      dayKr = '월'
+    } else if (day === 2) {
+      dayKr = '화'
+    } else if (day === 3) {
+      dayKr = '수'
+    } else if (day === 4) {
+      dayKr = '목'
+    } else if (day === 5) {
+      dayKr = '금'
+    } else if (day === 6) {
+      dayKr = '토'
+    }
+  </script>
+</head>
+
+<script>
+  window.document.write(`<body style="background: ${color}">`);
+</script>
+<h2>
+  평일 : Aqua, 주말 : gold
+</h2>
+<hr>
+<script>
+  window.document.write(`오늘은 ${date}일, ${dayKr}요일입니다.`)
+</script>
+
+</body>
+
+</html>
