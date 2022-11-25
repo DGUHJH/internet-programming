@@ -7,7 +7,7 @@
     let data = [];
     for (let i = 0; i < 4; i++) {
       let a = prompt("앰퍼샌트로 분리하면서 [국가 대표선수 FIFA랭킹] 순으로 입력");
-      let a_country = a.split('&')[0], a_player = a.split('&')[1], a_rank = a.split('&')[2];
+      let [a_country, a_player, a_rank] = a.split('&');
       let b = { country: a_country, player: a_player, rank: a_rank };
       // 대한민국&손흥민&28
       // 가나&아이유&60
