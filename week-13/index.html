@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    @import url("./index.css");
+  </style>
+  <script>
+    const onClickSubmit = () => {
+      if (document.getElementById('email') === '') {
+        alert("이메일을 입력해주세요.");
+        return;
+      }
+      if (document.getElementById('password') === '') {
+        alert("비밀번호를 입력해주세요.")
+        return;
+      }
+      if (document.getElementById('password') !== document.getElementById('passwordConfirm')) {
+        alert("비밀번호와 비밀번호 확인이 일치하지 않습니다.");
+        return;
+      }
+      if (document.getElementById('nickname') === '') {
+        alert("닉네임을 입력해주세요.")
+        return;
+      }
+      if (document.getElementById('identity') === '') {
+        alert("신분을 입력해주세요.")
+        return;
+      }
+      if (document.getElementById('path') === '') {
+        alert("접근경로를 선택해주세요.")
+        return;
+      }
+      if (document.getElementById('phoneNumber') === '') {
+        alert("전화번호를 입력해주세요.")
+        return;
+      }
+      if (document.getElementById('agreement') === false) {
+        alert("약관에 동의해주세요.");
+        return;
+      }
+      alert("회원가입이 성공적으로 완료되었습니다.");
+      return;
+    }
+  </script>
+</head>
+
+<body>
+  <header class="header-container-root">
+    <div class="header-container">
+      <div class="header-logo-container">
+        <img class="header-logo-img m-r-20" src="assets/logo.png" />
+        <span class="f-s-m f-s-r">
+          피드백 요청
+        </span>
+        <span class="f-s-m f-s-r header-typo-point">
+          피드백 리스트
+        </span>
+      </div>
+      <div class="d-f-r">
+        <button class="blue-button f-s-r f-c-w c-p">
+          로그인
+        </button>
+        <button class="normal-button f-s-r f-c-g c-p">
+          회원가입
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="content_container m-t-200">
+    <h3 class="t-a-c">
+      간편하게 가입하고 <br />
+      비대면 코칭을 경험해보세요.
+    </h3>
+    <input placeholder="이메일" id="email" type="email" class="m-t-80 content_input">
+    <input placeholder="비밀번호" id="password" type="password" class="m-t-60 content_input">
+    <input placeholder="비밀번호 확인" id="passwordConfirm" type="password" class="m-t-20 content_input">
+    <input placeholder="닉네임" id="nickname" type="text" class="m-t-60 content_input">
+    <input placeholder="신분" id="identity" type="text" class="m-t-20 content_input">
+    <select placeholder="접근경로" id="path" class="m-t-20 content_input">
+      <option>
+        접근경로
+      </option>
+      <option>
+        웹사이트
+      </option>
+      <option>
+        포스터
+      </option>
+      <option>
+        블로그
+      </option>
+    </select>
+    <input placeholder="전화번호" id="phoneNumber" type="tel" class="m-t-20 content_input">
+    <div class="content_agree_container m-t-100">
+      <input type="checkbox" id="agreement" class="content_agree_input">
+      <p class="f-s-m">
+        <span class="content_agree_blue_typo">가입 약관</span> 및 <span class="content_agree_blue_typo">마케팅 정보 수집</span>에
+        동의합니다.
+      </p>
+    </div>
+    <button class="content_submit_button f-s-l m-t-60" onclick="onClickSubmit();">
+      로그인
+    </button>
+  </div>
+</body>
+
+</html>

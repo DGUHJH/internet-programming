@@ -20,8 +20,7 @@
         this.price -= 8000;
       }
     }
-    let a = new square(getRandom(10, 100), getRandom(10, 100), 100000);
-    let b = new square(getRandom(10, 100), getRandom(10, 100), 100000);
+    let [a, b] = [new square(getRandom(10, 100), getRandom(10, 100), 100000), new square(getRandom(10, 100), getRandom(10, 100), 100000)];
   </script>
 </head>
 
@@ -33,11 +32,8 @@
   <script>
     window.document.write(`square1: 가로:${a.width}cm 세로:${a.height}cm 자금 :${a.price}원 <br/>`);
     window.document.write(`square2: 가로:${b.width}cm 세로:${b.height}cm 자금 :${b.price}원 <br/> <br/>`);
-
-    let c = a.area() > b.area() ? 0 : 1;
     let count = 0;
-
-    if (!c) {
+    if (a.area() > b.area()) {
       while (b.area() < a.area()) {
         window.document.write(`square2의 넓이가 square1보다 작아 수리를 진행하였습니다. <br/>`);
         b.fix();
