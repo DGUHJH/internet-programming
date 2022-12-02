@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    const onClickResult = function (e) {
+      document.getElementById('result').innerHTML = 'This';
+    }
+  </script>
+</head>
+
+<body>
+  <h2>
+    Quiz!
+  </h2>
+  <hr>
+  <ol type="I" onclick="this.style.backgroundColor='slategray'" style="color: #f00">
+    <li>이것은 객체 자신을 가리키는 자바스크립트의 키워드이다.</li>
+    <li>이것은 DOM 객체에서 객체 자신을 가리키는 용도로 사용된다.</li>
+    <li>이것은 무엇인가? <b><span id="result" onclick="onClickResult();">정답 확인</span></b></li>
+  </ol>
+</body>
+
+</html>

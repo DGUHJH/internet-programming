@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let checkBorder = false;
+    const onClickBorder = () => {
+      if (!checkBorder) {
+        document.getElementById('mySpan').style.border = '2px aqua dotted';
+      } else {
+        document.getElementById('mySpan').style.border = '';
+      }
+      checkBorder = !checkBorder;
+    }
+
+    const onClickP = () => {
+      alert(`<p> 태그의 개수는 ${document.getElementsByTagName('p').length}`);
+    }
+
+    const onClickHr = () => {
+      alert(`<hr> 태그의 개수는 ${document.getElementsByTagName('hr').length}`);
+    }
+
+    let fontSize = 12;
+
+    const onClickPlusPx = () => {
+      let i, senElements = document.getElementsByClassName('sen');
+      for (i = 0; i < senElements.length; i++) {
+        fontSize += 2;
+        senElements[i].style.fontSize = `${fontSize}px`;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h2>자바스크립트란? <button onclick="onClickBorder();">border</button> <button onclick="onClickP();">p</button> <button
+      onclick="onClickHr();">hr</button>
+    <button onclick="onClickPlusPx();">확대</button>
+  </h2>
+  <hr>
+  <p class="sen">
+    자바스크립트는 웹 프로그래밍 언어로써 웹 페이지를 동적 변경시킬 수 있다.
+  </p>
+  <p class="sen">
+    <span id="mySpan">C언어</span>를 아는 사용자는 빠르게 학습할 수 있다. <br>
+  </p>
+  <p class="sen">
+    이벤트 등 GUI프로그래밍에 필요한 요소들이 있어 학습에 약간의 어려움이 있다.
+  </p>
+</body>
+
+</html>

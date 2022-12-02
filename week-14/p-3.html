@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    let n1 = 0, n2 = 0, n3 = 0;
+    const onClickContainer = () => {
+      n1 = Math.floor(Math.random() * 3);
+      n2 = Math.floor(Math.random() * 3);
+      n3 = Math.floor(Math.random() * 3);
+      if (n1 == n2 && n2 == n3 && n1 == n3) {
+        document.getElementById('message').innerHTML = '성공입니다!'
+      } else {
+        document.getElementById('message').innerHTML = '실패입니다!'
+      }
+      document.getElementById('n1').innerHTML = `${n1}`;
+      document.getElementById('n2').innerHTML = `${n2}`;
+      document.getElementById('n3').innerHTML = `${n3}`;
+    }
+  </script>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .element {
+      font-size: 24px;
+      color: yellow;
+      background: #0003;
+    }
+
+    #message {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>
+    겜블링 게임
+  </h2>
+  <hr>
+  <div class="container" onclick="onClickContainer();">
+    <span class="element" id="n1">
+      0
+    </span>
+    <span class="element" id="n2">
+      0
+    </span>
+    <span class="element" id="n3">
+      0
+    </span>
+  </div>
+  <span id="message">
+  </span>
+</body>
+
+</html>
